@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>
+            Isphero
+        </title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="{{ STATIC_URL }}js/jscolor.js" type="text/javascript"></script>
+        
+        <script>
+            
+            
+            function reset(){
+                
+                var url="/invite";
+                $.ajax({
+                       type:"GET",
+                       url:url,
+                       timeout:3000,
+                       success:function(data){
+                       }
+                       });
+            }
+            
+            
+            function sendInvite(email){
+                var url="/invite";
+                $.ajax({
+                       type:"GET",
+                       url:url,
+                       data:{"mail":email},
+                       success:function(data){
+                       $("#emailInvite").html=data;
+                       }
+                       });
+            }
+            $(document).ready(function() {
+                              $("#inviteMeButton").click(function(){
+                                                         var mail=$.trim($("#inviteMe").val());
+                                                         if(mail){
+                                                         sendInvite(mail);
+                                                         }else{
+                                                         alert("Please insert a valid email");
+                                                         }
+                                                        
+                                                         
+                                                         
+                                });
+                              });
+            
+            
+            
+            </script>
+        
+    </head>
+    
+    <body style="margin:0px;padding:0px;">
+        
+        <div id="main">
+            
+            <div id="canvasPlace" style="width:900px; margin:0 auto;">
+                <div id="header" style="padding-bottom:10px;">
+                    <img src="{{ STATIC_URL }}images/sphero_logo_full.png" height="100px"/>
+                    <div style="float:right;width:600px;">
+                        
+                        <p style="padding-top:5px;">Control your sphero using browser from anywhere. Btw it just a hack. so will disable this. ;)</p>
+                        <p> No go in the black thingy below and click in and start controlling your sphero. Get out of the place to stop the same.
+                        Have fun enjoy</p>
+                        
+                    </div>
+                </div>
+                <div>
+                    <center>
+                    <span style="font-size:24px;display:block;">Give a missed call to this number and get invited using sms +1 812-496-2254 Not working now.
+                    
+                    </span>
+                    <br />
+                    <span style="font-size:24px;display:block">OR </span>
+                        <br />
+                        <span style="font-size:24px;display:block">Ask for an invitation. The 30th one shall get the access </span>
+                        <br />
+                    <div id="emailInvite">
+                        <input type="email" id="inviteMe">
+                        <input type="button" id="inviteMeButton" value="Send me an invitation">
+                    </div>
+                        <img src="http://sendgrid.com/mkt/assets/logos_brands/stacked/PNG/logo_full_color_stk-6107f687d10d6f8249a5e040901c8126.png">
+                        <img src="http://www.twilio.com/packages/company/img/logos_downloadable_logobrand.png"/>
+                    </center>
+
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
+

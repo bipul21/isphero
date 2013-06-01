@@ -1,0 +1,158 @@
+body{
+    padding-top:0px;
+    margin:0px;
+    background-color: #d8dfea;;
+/*   background:url("/static/images/bg.jpg") repeat;
+*/
+}
+
+.cf{
+    zoom: 1;
+}
+
+.inside-masthead {
+width: 940px;
+margin: 0 auto;
+padding: 0 20px;
+
+}
+.logo {
+margin-top: 8px;
+float: left;
+width: 182px;
+height: 27px;
+display: block;
+-webkit-transform: translate3d(0, 0, 0);
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: subpixel-antialiased;
+-moz-font-smoothing: subpixel-antialiased;
+font-smoothing: subpixel-antialiased;
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.2s ease-out;
+-ms-transition: all 0.2s ease-out;
+-o-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
+}
+#mainText{
+
+}
+#masthead{
+    min-width: 980px;
+    height: 70px;
+    background: #343131;
+    display: block;
+
+
+}
+
+.padding20{
+    padding: 20px;
+}
+
+#homeView{
+    width:60%;
+    margin: 0 auto;
+}
+.hometext{
+        text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+        color: #9c8468;
+        opacity: 0.3;
+        font: 40px 'Museo700';
+    display: block;
+}
+#maintextbox{
+
+}
+#main{
+    width:1000px;
+    margin:0 auto;
+    min-width: 1000px;
+    display: block;
+}
+header{
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+#content,#navbar-results{
+    margin-top:10px;
+}
+.product{
+    position: relative;
+    min-height:325px;
+    padding-top:4px;
+}
+.product:hover{
+    border:1px solid #08C;
+}
+.actual-price{
+    text-decoration: line-through;
+    padding-right: 20px;
+    font-size:12px;
+}
+.fk-price{
+    font-size:20px;
+    font-weight: bold;
+    color: #05450d;
+}
+.price-div{
+    padding-left: 5px;
+}
+.product-info{
+    bottom:0;
+    position: absolute;
+    width: 90%;
+    padding-bottom: 4px!important;
+}
+#mainContent a{
+    color: #004b91;
+    text-decoration: none;
+}
+#mainContent a:hover{
+    color:#da7c0c;
+}
+.product-title{
+    font-size:13px;
+    zoom: 1;
+    line-height: 13px;
+    color:inherit;
+    display: block;
+    padding-top:4px;
+    padding-bottom: 4px;
+    text-rendering: optimizelegibility;
+}
+.buy-div{
+    width:100%;
+}
+.buy-div img{
+    padding: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+.product-image{
+    height:200px;
+}
+.product-image img{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+.footer{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+#user-info{
+    cursor: default;
+    padding-left: 20px;
+    font-style: italic;
+}
+#searchBar{
+
+    z-index: 100;
+    width:1000px;
+}
+.loading{
+    margin-top: 20px;
+}
